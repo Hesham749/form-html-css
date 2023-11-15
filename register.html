@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="background">
+            <h1>Register</h1>
+            <form>
+                <label for="un">User Name </label><br /><br />
+                <input
+                    type="text"
+                    name="un"
+                    id="un"
+                    placeholder="Enter Your Name"
+                /><br /><br />
+                <label for="pass">Password </label> <br /><br />
+                <input
+                    type="password"
+                    name="pass"
+                    id="pass"
+                    placeholder="Enter Your Password"
+                />
+                <br /><br />
+                <label for="mail">Your Email</label><br /><br />
+                <input
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder="Enter Your Email"
+                />
+                <br /><br />
+                <label for="phone">Your phone Number</label><br /><br />
+                <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    pattern="[0-9]{11}"
+                    placeholder="Enter your phone Number"
+                />
+                <br /><br />
+                <label for="coutry">What Is Your Country ?</label><br /><br />
+                <input name="Coutry" id="coutry" list="Country" />
+                <datalist id="Country">
+                    <option value="Egypt"></option>
+                    <option value="Usa"></option>
+                    <option value="Sudan"></option>
+                </datalist>
+                <br /><br />
+                <button type="submit">Register</button>
+            </form>
+            <p>
+                Do You Have Account ?
+                <a href="index.html">Log in</a>
+            </p>
+        </div>
+    </body>
+</html>
